@@ -1,0 +1,17 @@
+
+<table class="table table-striped">
+ 	<tr>
+ 		<td>Player</td>
+ 		<td>Avg Ranking</td>
+ 		<td> </td>
+ 	</tr>
+<%@players.each do |player|%>
+
+	<tr>
+		<td><%=player.PlayerName%></td>
+	 	<td><%=player.AvgRank%></td> 
+	 	<td><a href="/players/draft?id=<%=player.id%>">Mark as drafted</a></td>
+	 </tr>
+<%end%>
+
+</table>
